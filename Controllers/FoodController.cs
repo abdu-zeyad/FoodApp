@@ -27,8 +27,8 @@ namespace FoodApp.Controllers
         [HttpPost]
         public IActionResult Create(Food obj)
         {
-            // _db.Add(obj);
-            // _db.SaveChanges();
+            _db.Add(obj);
+            _db.SaveChanges();
             return RedirectToAction("Index");
         }
 
@@ -43,8 +43,8 @@ namespace FoodApp.Controllers
         public IActionResult DeletePost(int? Id)
         {
             var obj = _db.Foods.Find(Id);
-            // _db.Remove(obj);
-            // _db.SaveChanges();
+            _db.Remove(obj);
+            _db.SaveChanges();
             return RedirectToAction("Index");
         }
 
@@ -58,8 +58,8 @@ namespace FoodApp.Controllers
         public IActionResult Update(Food obj)
         {
 
-            // _db.Update(obj);
-            // _db.SaveChanges();
+            _db.Update(obj);
+            _db.SaveChanges();
             return RedirectToAction("Index");
         }
 

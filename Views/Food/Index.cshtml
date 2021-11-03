@@ -1,0 +1,56 @@
+@model IEnumerable<Food>
+
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Expenses List</h2>
+        </div>
+        <div class="col-6 text-right">
+            <a asp-controller="Food" asp-action="Create" class="btn btn-primary">Create new Expense</a>
+        </div>
+    </div>
+    <br />
+
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>
+                        Food
+                    </th>
+                    <th>
+                        Chef
+                    </th>
+
+                    <th>
+                        Changes
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var food in Model)
+                {
+                    <tr>
+                        <td width="33%">@food.FoodName</td>
+                        <td width="33%">@food.Chef</td>
+                        <td width="33%">
+                            <div class="w-100 btn-group" role="group">
+                                <a asp-controller="Food" asp-action="Update" asp-route-Id="@food.Id"
+                            class="btn btn-primary mx-1">Update</a>
+                                <a asp-controller="Food" asp-action="Delete" asp-route-Id="@food.Id"
+                            class="btn btn-danger mx-1">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No items created yet</p>
+    }
+
+</div>

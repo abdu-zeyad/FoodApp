@@ -15629,8 +15629,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/abdu/dotnet-projcts/FoodApp/Views/Food/Index.cshtml",
+      "TargetPath": "Views\\Food\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/abdu/dotnet-projcts/FoodApp/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/abdu/dotnet-projcts/FoodApp/Views/Food/Create.cshtml",
+      "TargetPath": "Views\\Food\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15649,8 +15659,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/abdu/dotnet-projcts/FoodApp/Views/Food/Update.cshtml",
+      "TargetPath": "Views\\Food\\Update.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/abdu/dotnet-projcts/FoodApp/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/abdu/dotnet-projcts/FoodApp/Views/Food/Delete.cshtml",
+      "TargetPath": "Views\\Food\\Delete.cshtml",
       "FileKind": "mvc"
     }
   ],
